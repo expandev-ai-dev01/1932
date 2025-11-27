@@ -7,13 +7,14 @@
  */
 
 import { Router } from 'express';
+import taskRoutes from './taskRoutes';
 
 const router = Router();
 
 /**
- * @remarks
- * Internal routes will be added here as features are implemented.
- * Examples: resource management, user operations, protected data access, etc.
+ * @rule {be-route-grouping}
+ * Task Management Routes
  */
+router.use('/tasks', taskRoutes);
 
 export default router;

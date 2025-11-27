@@ -21,6 +21,7 @@ export const zBit = z.number().int().min(0).max(1);
 export const zFK = z.number().int().positive();
 export const zNullableFK = z.number().int().positive().nullable();
 export const zDateString = z.string().datetime();
+export const zUUID = z.string().uuid();
 
 /**
  * @summary
